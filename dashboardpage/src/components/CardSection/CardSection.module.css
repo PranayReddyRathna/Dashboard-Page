@@ -1,0 +1,33 @@
+/* src/components/WidgetCard.module.css */
+
+.widgetCard {
+    margin: 20px;
+    width: 100%; /* Ensure full width within its container */
+    max-width: 300px; /* Maintain a consistent max width */
+    height: 80%; /* Ensure full height within its container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .widgetTitle {
+    height:2rem;
+    width:15rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  
+  .chartContainer {
+    flex-grow: 1; /* Allow the chart to take up the remaining space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .widgetCard {
+      max-width: 100%; /* Allow cards to be full width on smaller screens */
+    }
+  }
+  

@@ -1,0 +1,77 @@
+{
+    "categoryId": 1,
+    "categoryName": "CNAPP Dashboard",
+    "dashboards": [
+      {
+        "dashboardId": 1,
+        "dashboardName": "CSPM Executive Dashboard",
+        "widgets": [
+          {
+            "widgetId": 1,
+            "widgetName": "Cloud Accounts",
+            "widgetData": {
+              "connected devices": 2,
+              "not connected devices": 0
+            }
+          },
+          {
+            "widgetId": 2,
+            "widgetName": "Cloud Account Risk Management",
+            "widgetData": {
+              "Failed": 800,
+              "Warning": 560,
+              "Passes": 400,
+              "Not available": 36
+            }
+          }
+        ]
+      },
+      {
+        "dashboardId": 2,
+        "dashboardName": "CWPP Dashboard",
+        "widgets": [
+          {
+            "widgetId": 3,
+            "widgetName": "Top 5 Namespace Specific Alerts",
+            "widgetData": {
+              "data": "not available"
+            }
+          },
+          {
+            "widgetId": 4,
+            "widgetName": "widget2",
+            "widgetData": {
+              "data": "not available"
+            }
+          }
+        ]
+      },
+      {
+        "dashboardId": 3,
+        "dashboardName": "Registry Scan",
+        "widgets": [
+          {
+            "widgetId": 5,
+            "widgetName": "Image Risk Management",
+            "widgetData": {
+              "critical": 350,
+              "solved": 400,
+              "unsolved": 200,
+              "high": 250
+            }
+          },
+          {
+            "widgetId": 6,
+            "widgetName": "Image Security Issues",
+            "widgetData": {
+              "critical": 350,
+              "solved": 400,
+              "unsolved": 200,
+              "high": 250
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

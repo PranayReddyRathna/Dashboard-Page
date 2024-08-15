@@ -1,0 +1,47 @@
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left:1rem;
+    padding-right:3rem;
+    padding-top:0.5rem;
+}
+.icon{
+    position: relative;
+    top: 20%;  
+}
+.inputfield{
+    padding:0.5rem;
+    margin-left:-1.5rem;
+   width:20rem;
+   padding-left:2rem;
+}
+@media (max-width: 467px) {
+    .header {
+        flex-direction: column;   
+        align-items: flex-start;   
+        padding: 1rem;             
+    }
+
+    .inputfield {
+        width: 100%;          
+        margin-left: 0;      
+        padding-left: 2.5rem; 
+        margin-top: 1rem;    
+
+    .icon {
+        left: 1rem; 
+    }
+}
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .inputfield {
+        width: 100%;
+        max-width: 20rem; 
+    }
+}
