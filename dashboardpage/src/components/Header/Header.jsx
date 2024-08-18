@@ -1,5 +1,3 @@
-// src/components/Header/Header.js
-
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import SearchIcon from '@mui/icons-material/Search';
@@ -22,7 +20,7 @@ const Header = () => {
           type="search"
           placeholder="search anything"
           className={styles.inputfield}
-          onChange={handleSearchChange} // Handle search input change
+          onChange={handleSearchChange} 
         />
       </div>
     </div>

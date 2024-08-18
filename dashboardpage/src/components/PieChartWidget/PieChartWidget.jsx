@@ -1,5 +1,3 @@
-// src/components/PieChartWidget.js
-
 import React from 'react';
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 
@@ -7,8 +5,6 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
 const PieChartWidget = ({ data }) => {
   if (!data) return <p style={{color:'black'}}>No data available</p>;
-
-  // Convert the data into an array suitable for the pie chart
   const pieData = Object.keys(data).map((key, index) => ({
     name: key,
     value: data[key],

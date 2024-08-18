@@ -1,20 +1,16 @@
-// src/components/Dashboard/Dashboard.js
-
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addWidget, removeWidget } from '../../redux/actions/dashboardActions';
 import CardSection from '../CardSection/CardSection';
 import AddWidget from '../AddWidget/AddWidget';
 import AddWidgetModal from '../AddWidgetModal/AddWidgetModal';
-
+import styles from './DashboardPage.module.css'
 const DashboardPage = () => {
   const dispatch = useDispatch();
   const dashboards = useSelector(state => state.dashboard.dashboards);
-  const searchQuery = useSelector(state => state.search.query); // Get search query from Redux
-
+  const searchQuery = useSelector(state => state.search.query); 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentDashboardId, setCurrentDashboardId] = useState(null);
-
   const handleOpenModal = (dashboardId) => {
     setCurrentDashboardId(dashboardId);
     setIsModalOpen(true);
@@ -35,7 +31,7 @@ const DashboardPage = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       {dashboards.map(dashboard => (
         <div key={dashboard.dashboardId}>
           <h2 style={{textAlign:'start',paddingLeft:'2rem'}}> {dashboard.dashboardName}</h2>
@@ -45,7 +41,7 @@ const DashboardPage = () => {
               .map(widget => (
                 <div key={widget.widgetId}>
                   <CardSection widgetName={widget.widgetName} widgetData={widget.widgetData} />
-                  <button onClick={() => handleRemoveWidget(dashboard.dashboardId, widget.widgetId)}>Remove</button>
+                  <button className={styles.btn} onClick={() => handleRemoveWidget(dashboard.dashboardId, widget.widgetId)}>Remove</button>
                 </div>
               ))
             }
@@ -53,7 +49,6 @@ const DashboardPage = () => {
           </div>
         </div>
       ))}
-
       <AddWidgetModal open={isModalOpen} onClose={handleCloseModal} onSave={handleSaveWidget} />
     </div>
   );

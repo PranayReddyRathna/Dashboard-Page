@@ -1,5 +1,3 @@
-// src/components/AddWidgetCard.js
-
 import React from 'react';
 import { Card, CardContent, Typography, IconButton } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
@@ -11,7 +9,7 @@ const AddWidget = ({ onAddWidget }) => {
       style={{
         margin: '20px',
         width: '300px',
-        height:'310px',
+        height:'315px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

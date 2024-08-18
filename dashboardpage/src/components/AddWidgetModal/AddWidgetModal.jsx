@@ -1,5 +1,3 @@
-// src/components/AddWidgetModal.js
-
 import React, { useState } from 'react';
 import { Dialog, DialogActions, DialogContent, DialogTitle, Button, TextField } from '@mui/material';
 
@@ -10,8 +8,8 @@ const AddWidgetModal = ({ open, onClose, onSave }) => {
   const handleSave = () => {
     if (widgetName && widgetText) {
       onSave(widgetName, widgetText);
-      onClose(); // Close the modal after saving
-      setWidgetName(''); // Reset form fields
+      onClose(); 
+      setWidgetName(''); 
       setWidgetText('');
     }
   };

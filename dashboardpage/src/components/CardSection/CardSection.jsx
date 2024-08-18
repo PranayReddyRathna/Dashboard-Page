@@ -11,7 +11,7 @@ const CardSection = ({ widgetName, widgetData }) => {
           {widgetName}
         </Typography>
         <div className={styles.chartContainer}>
-          <PieChartWidget data={widgetData} />
+         {widgetData.data==="not available"?(<div className={styles.datasection}><p>No Graph Data Available</p></div>):(<><PieChartWidget data={widgetData} /></>)} 
         </div>
       </CardContent>
     </Card>

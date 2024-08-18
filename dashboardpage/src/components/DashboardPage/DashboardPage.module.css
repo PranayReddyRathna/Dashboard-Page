@@ -6,11 +6,28 @@
     padding-right:7rem;
     padding-top:0.5rem;
 }
-.btn{
-    margin-left:1rem;
+.btn {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right,#37B7C3,#088395);
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    color:white;
 }
+
 .dashboardtitle{
     margin-top: 0.5rem;
     padding-left:3.6rem;
     text-align: start;
+}
+.container{
+    border:1px solid #92c7cf;
+    margin:2rem;
+    border-radius: 1rem;
+    background: #92c7cf;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
 }
